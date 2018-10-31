@@ -17,7 +17,6 @@ package net.javacrumbs.jsonunit.assertj;
 
 import net.javacrumbs.jsonunit.assertj.JsonAssert.ConfigurableJsonAssert;
 import net.javacrumbs.jsonunit.assertj.internal.JsonRepresentation;
-import net.javacrumbs.jsonunit.core.Configuration;
 import net.javacrumbs.jsonunit.core.internal.JsonUtils;
 import org.assertj.core.api.Assertions;
 
@@ -32,7 +31,7 @@ public final class JsonAssertions {
     }
 
     public static ConfigurableJsonAssert assertThatJson(Object actual) {
-        return new ConfigurableJsonAssert(actual, Configuration.empty());
+        return new ConfigurableJsonAssert(actual);
     }
 
     /**

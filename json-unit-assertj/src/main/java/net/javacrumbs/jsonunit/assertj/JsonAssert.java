@@ -270,6 +270,10 @@ public class JsonAssert extends AbstractAssert<JsonAssert, Object> {
             this(Path.create("", getPathPrefix(actual)), configuration, actual);
         }
 
+        public ConfigurableJsonAssert(Object actual) {
+            this(actual, Configuration.empty());
+        }
+
         /**
          * Adds comparison options.
          */
